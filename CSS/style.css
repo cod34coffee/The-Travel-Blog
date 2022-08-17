@@ -7,7 +7,7 @@
 }
 .icon-bar{
     position: fixed;
-    top: 80%;
+    top: 85%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -15,6 +15,17 @@ z-index:3;
 
 }
 
+.btnMore{
+   transform: translateX(150%);
+   margin-top: 5%;
+}
+
+.topic{
+    display: block;
+    text-align: center;
+    transform: translateY(30%);
+
+}
 .topSect{
     margin-right: 5%;
     margin-left:1%;
@@ -55,8 +66,13 @@ z-index:3;
     font-weight:500;
     
     
+    
 }
+.updatesList{
+    border-width: thick;
+    border-color: black;
 
+}
 .bookT{
     text-align: center;
     margin: 3%;
@@ -87,6 +103,16 @@ z-index:3;
     z-index: 2;
     position: absolute;
     
+}
+
+.Facebook, .Twitter, .Insta, .YouTube{
+    margin: 50%;
+    text-decoration: none;
+   
+}
+.Facebook2, .Twitter2, .Insta2, .YouTube2{
+    font-size: 30px;
+ 
 }
 
 .bottomB{
