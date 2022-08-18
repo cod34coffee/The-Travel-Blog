@@ -2,19 +2,64 @@
     padding: 10%;
 }
 
+
+
 .blog{
     width: 18rem;
 }
 .icon-bar{
     position: fixed;
-    top: 85%;
+    top: 87%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-z-index:3;
+z-index:2;
 
 }
 
+.videoH{
+   
+    width: 100%;
+    height: auto;
+   
+     
+
+}
+
+.dropdownText{
+    font-size: large;
+}
+
+.homeLinks{
+    position: absolute;
+    z-index: 5%;
+    transform: translateY(-200%);
+    color: whitesmoke;
+    
+    
+ 
+}
+
+.homeText{
+    color: white;
+    
+    
+}
+.homeText:hover{
+    text-decoration: none;
+}
+.homeText2{
+    color: white;
+   
+    
+}
+.aboutHomeT{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.homeText2:hover{
+    text-decoration: none;
+}
 .btnMore{
    transform: translateX(150%);
    margin-top: 5%;
@@ -24,11 +69,52 @@ z-index:3;
    margin-top: 5%;
    margin-bottom: 2%;
 }
+.btnMoreSubscribe2{
+    transform: translateX(140%);
+   margin-top: 5%;
+   margin-bottom: 2%;
+}
+
+.btnMoreSubscribe3{
+    transform: translateX(180%);
+   margin-top: 5%;
+   margin-bottom: 2%;
+}
+
+.form-labelEmail3{
+    transform: translateX(120%);
+    
+}
+
+
+
+.background{
+    background-color: rgba(0, 255, 255, 0.237);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+}
+
 .form-labelEmail {
     margin-top: 20%;
     margin-bottom: 20%;
-    background-color: rgba(36, 39, 198, 0.442);
+    background-color: white;
     padding: 10%;
+}
+
+.contactForm{
+  width: 45rem;
+  margin-bottom: 5%;
+  margin-top: 10%;
+    
+}
+
+
+
+.lineBetween{
+    margin-top: 5%;
+    margin-bottom: 7%;
+   
 }
 
 .subscribeForm{
@@ -36,15 +122,33 @@ z-index:3;
     width: 20rem;
     transform: translateX(8%);
     
+    
+}
+
+.subscribeForm3{
+    background-color: transparent;
+    width: 30rem;
+
+    
+    
+}
+
+.subscribeForm4{
+   
+    width: 30rem;
+
+    
+    
 }
 
 .formTopText{
      transform: translateX(30%);
      margin-bottom: 5%;
      margin-top: 2%;
+     
 }
 .navbar-nav{
-    transform: translateX(35%);
+    transform: translateX(40%);
 }
 
 .topic{
@@ -54,8 +158,8 @@ z-index:3;
 
 }
 .topSect{
-    margin-right: 5%;
-    margin-left:1%;
+    margin-right: 12%;
+    margin-left:5%;
 }
 
 
@@ -92,6 +196,21 @@ z-index:3;
     word-spacing: 10px;
 }
 
+.Cat{
+    word-spacing: 10px;
+    
+}
+
+.Cat a{
+    color: black;
+}
+
+.Cat a:hover{
+    word-spacing: 10px;
+    color: black;
+    text-decoration: none;
+}
+
 .postBorder{
     border: none;
 }
@@ -105,33 +224,10 @@ z-index:3;
     width: 100%;
 }
 
-.scroll2{
-    background-color: lightblue;
-
-height: 100px;
-width: 500px;
-overflow-x: scroll;
-}
-.scroll{
-    width: 1000px;
-margin: 10px;
-}
 
 
-.updates{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-size:17px;
-    font-weight:500;
-    
-    
-    
-}
-.updatesList{
-    border-width: thick;
-    border-color: black;
 
-}
+
 .bookT{
     text-align: center;
     margin: 3%;
@@ -167,7 +263,7 @@ margin: 10px;
    
 }
 .Facebook2, .Twitter2, .Insta2, .YouTube2{
-    font-size: 30px;
+    font-size: 25px;
  
 }
 
@@ -189,10 +285,20 @@ margin: 10px;
 .footer {
     padding: 15px;
     text-align: center;
-    background: #ddd;
+    background: rgb(248, 245, 245);
     margin-top: 20px;
    
   }
+.footerHome{
+    padding: 15px;
+    text-align: center;
+    background: rgb(248, 245, 245);
+   
+}
+
+.dropdown-menu{
+    width: 15rem;
+}
 
 .bottomB{
     margin-left: 1%;
@@ -219,8 +325,29 @@ padding: 7%;
     height: 30rem;
     justify-content: center;
     margin-top: 10%;
-    
+    border-width: 3px;
 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.cardExp{
+    border:none;
+}
+
+.rightColumn{
+    margin-top: 5%;
+}
+
+.aboutText{
+    margin-top: 20%;
+}
+
+.aboutPic{
+    height: 30rem;
+    
 }
 
 .row:after {
