@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+       
     <title>Travelhut</title>
 </head>
 
@@ -28,13 +29,13 @@
                         <a class="nav-link " aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Blog</a>
+                        <a class="nav-link " href="/HTML/try2.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">Book Your Trip</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">About</a>
+                        <a class="nav-link " href="/HTML/about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">Contact</a>
@@ -145,8 +146,8 @@
         </div>
         <a href="#" class=" btnMore btn btn-primary col-lg-3">Want More</a>
       </div>
-      <div class="col-4">
-          <div class="card"style="width:35rem;">
+      <div class="col-2 rightSection">
+          <div class="card"style="width:25rem;">
             <div class="card " style="max-width:fit-content;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -155,36 +156,40 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">About Me</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">This is a wider card with supporting text on the side. </p>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
             </div>
           </div>
           </div>
-        <div class="card recentPost" style="width: 35rem;">
-            <div class="card-header">
-                Recent Posts
+          <div class="form-labelEmail " style="width:25rem;">
+            <label for="FormControlInput1" class="form-label formTopText">SUBSCRIBE TO MY NEWSLETTER</label>
+            <input type="email" class="form-control subscribeForm" id="FormControlInput1" placeholder="Email Address...">
+            <a href="#" class=" btnMoreSubscribe btn btn-primary col-lg-3">Subscribe</a>
+          </div>
+        <div class="card recentPost" style="width: 25rem;">
+            <div class="card-header postHeader">
+                <h4>Recent Posts</h4>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">
+                <li class="list-group-item postBorder">
                     <div class="card " style="max-width:fit-content;">
-                        <div class="row g-0">
+                        <div class="row g-0 ">
                             <div class="col-md-4">
                                 <img src="/Images/beach cave rocks.jpeg" class="img-fluid recentImg rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Post 1</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item postBorder">
                     <div class="card " style="max-width:fit-content;">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -193,8 +198,7 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Post 2</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
@@ -210,8 +214,7 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Post 3</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
@@ -221,19 +224,19 @@
             </ul>
         </div>
         <div class="formSearch ">
-        <form class="d-flex "style="width: 35rem;">
+        <form class="d-flex"style="width: 25rem;">
             <input class="form-control me-2 " type="search" placeholder="Search Post..." aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         </div>
-        <div class="card" style="width: 35rem;">
-            <div class="card-header">
-                Categories
+        <div class="card category" style="width: 25rem;">
+            <div class="card-header postHeader">
+                <h4>Categories</h4>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">New 3</li>
-                <li class="list-group-item">Top Picks 6</li>
-                <li class="list-group-item">Total Post 20</li>
+                <li class="list-group-item spaceB">New 3</li>
+                <li class="list-group-item spaceB">Top Picks 6</li>
+                <li class="list-group-item spaceB">Total Post 20</li>
             </ul>
         </div>
     </div>
@@ -324,7 +327,7 @@
         </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer ">
         <div class="icon-bar2">
        
           
@@ -341,6 +344,7 @@
         
     
         </div>
+       
         <p class="footerSent ">Theme by Ka'Eatta Rankins.</p>
     </div>
 </div>
@@ -352,5 +356,8 @@
     </script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/JS/load-more-button.js"></script>
 </body>
 </html>

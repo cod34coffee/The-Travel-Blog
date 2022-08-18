@@ -19,9 +19,32 @@ z-index:3;
    transform: translateX(150%);
    margin-top: 5%;
 }
+.btnMoreSubscribe{
+    transform: translateX(150%);
+   margin-top: 5%;
+   margin-bottom: 2%;
+}
+.form-labelEmail {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    background-color: rgba(36, 39, 198, 0.442);
+    padding: 10%;
+}
 
+.subscribeForm{
+    background-color: transparent;
+    width: 20rem;
+    transform: translateX(8%);
+    
+}
+
+.formTopText{
+     transform: translateX(30%);
+     margin-bottom: 5%;
+     margin-top: 2%;
+}
 .navbar-nav{
-    transform: translateX(22%);
+    transform: translateX(35%);
 }
 
 .topic{
@@ -56,10 +79,25 @@ z-index:3;
 .recentPost{
     margin-top: 10%;
     margin-bottom: 10%;
+    border:none;
 }
 
-.recentImg{
-    
+.postHeader{
+    border: none;
+    background-color: white;
+    font-weight: 300;
+}
+
+.spaceB{
+    word-spacing: 10px;
+}
+
+.postBorder{
+    border: none;
+}
+
+.category{
+    border: none;
 }
 
 .updateItem{
@@ -153,6 +191,7 @@ margin: 10px;
     text-align: center;
     background: #ddd;
     margin-top: 20px;
+   
   }
 
 .bottomB{
@@ -176,7 +215,13 @@ padding: 7%;
     font-size: large;
 }
 
+.aboutCard{
+    height: 30rem;
+    justify-content: center;
+    margin-top: 10%;
+    
 
+}
 
 .row:after {
     content: "";
@@ -194,4 +239,9 @@ transform: translateY(-110%);
 }
 .featuredC{
     margin: 3%;
+}
+
+.form-labelEmail2{
+    position:relative;
+    float: right;
 }
