@@ -17,41 +17,227 @@ z-index:2;
 
 }
 
-.videoH{
-   
+.videoH{   
     width: 100%;
     height: auto;
-   
-     
-
 }
 
 .dropdownText{
     font-size: large;
 }
 
-.homeLinks{
-    position: absolute;
-    z-index: 5%;
-    transform: translateY(-200%);
-    color: whitesmoke;
-    
-    
- 
+.homeLinks{   
+    color:black; 
+   box-shadow: #111;
+   
+   
 }
 
-.homeText{
-    color: white;
-    
-    
+.homeCard {
+    font-size: x-small;
 }
+
+.homeCard2 {
+    font-size: x-small;
+}
+
+
+
+.blH{
+    padding-top: 2%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("/Images/aboutPic.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+.bookText{
+    color:black;
+    font-size: medium;
+}
+
+  .paraBlock{
+    padding: 5%;
+  }
+  .paraBlock2{
+    padding: 5%;
+    z-index: 2%;
+    position: absolute;
+  }
+  .parallax2 {
+    /* The image used */
+    background-image: url("/Images/brunette\ poses\ with\ dress.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax3 {
+    /* The image used */
+    background-image: url("/Images/woman\ on\ cliff.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax4 {
+    /* The image used */
+    background-image: url("/Images/woman\ doing\ yoga.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+  }
+
+  .cardSection {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .cardSection:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+.cardSText{
+    color: white;
+
+}
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.contactB{
+    margin-bottom: 5%;
+}
+.reviews{
+    margin-top: 7%;
+}
+
+.reviewHeader{
+    background-color: white;
+   
+}
+
+.checked {
+    color: orange;
+  }
+
+.reviewsBorder{
+    border: none;
+    padding-left:10%;
+}
+
+.reviewTitle{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.experBlock{
+    margin-bottom: 2%;
+}
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
 .homeText:hover{
     text-decoration: none;
 }
 .homeText2{
-    color: white;
-   
-    
+    color: white;  
 }
 .aboutHomeT{
     margin-left: 30%;
@@ -65,7 +251,7 @@ z-index:2;
    margin-top: 5%;
 }
 .btnMoreSubscribe{
-    transform: translateX(150%);
+    transform: translateX(110%);
    margin-top: 5%;
    margin-bottom: 2%;
 }
@@ -82,11 +268,14 @@ z-index:2;
 }
 
 .form-labelEmail3{
-    transform: translateX(120%);
-    
+    transform: translateX(110%);
 }
 
+.bookTripTop{
+    height: 50%;
+}
 
+.mySlides {display:none;}
 
 .background{
     background-color: rgba(0, 255, 255, 0.237);
@@ -94,6 +283,8 @@ z-index:2;
     padding-bottom: 3%;
     margin-top: 5%;
 }
+
+
 
 .form-labelEmail {
     margin-top: 20%;
@@ -108,7 +299,11 @@ z-index:2;
   margin-top: 10%;
     
 }
-
+.contactForm3{
+    width: 35rem;
+  
+      
+  }
 
 
 .lineBetween{
@@ -134,22 +329,64 @@ z-index:2;
 }
 
 .subscribeForm4{
-   
-    width: 30rem;
-
-    
-    
+    width: 30rem; 
 }
 
 .formTopText{
-     transform: translateX(30%);
+     transform: translateX(20%);
      margin-bottom: 5%;
      margin-top: 2%;
      
 }
+.formTopText2{
+    transform: translateX(25%);
+    margin-bottom: 5%;
+    margin-top: 2%;
+    
+}
 .navbar-nav{
     transform: translateX(40%);
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
 
 .topic{
     display: block;
@@ -158,10 +395,37 @@ z-index:2;
 
 }
 .topSect{
-    margin-right: 12%;
-    margin-left:5%;
+    margin-right: 10%;
+    margin-left:4%;
 }
 
+.cbText :hover{
+    color: rgb(156, 102, 15);
+}
+.bPlinks2 :hover{
+    color: rgb(156, 102, 15);
+    text-decoration: none;
+}
+
+.cWords{
+    font-weight: 500;
+}
+
+.bPlinks a{
+    text-decoration: none;
+}
+
+
+
+.cardTF{
+    font-weight:700;
+}
+
+.cardTF2{
+    font-weight:700;
+    background-color: rgba(255, 255, 255, 0.222);
+    color: white;
+}
 
 .cardSection{
     margin: 1%;
@@ -280,6 +544,7 @@ z-index:2;
 
 .cardSpace{
     margin-bottom: 2%;
+    box-shadow: 10%;
 }
 
 .footer {
@@ -287,6 +552,22 @@ z-index:2;
     text-align: center;
     background: rgb(248, 245, 245);
     margin-top: 20px;
+   
+  }
+
+  .footer a{
+  
+    color:black;
+   
+  }
+  .footer a{
+  
+    color:black;
+   
+  } 
+.footer a :hover{
+  
+    color:blue;
    
   }
 .footerHome{
