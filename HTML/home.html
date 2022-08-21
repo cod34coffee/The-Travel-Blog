@@ -17,12 +17,14 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
 
-        <div id="mySidenav" class="sidenav">
+        <div id="mySidenav" class="sidenav hNav2">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="/HTML/home.html">Home</a>
+            <a href="/HTML/home.html" class="hLside">Home</a>
             <a href="/HTML/try2.html">Blog</a>
             <a href="/HTML/bookTrip.html">Book Your Trip</a>
             <a href="/HTML/about2.html">About/Contact</a>
+            <a class=" bnav2 " onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</a>
+            <a class="" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a>
         </div>
 
         <div id="main">
@@ -37,7 +39,65 @@
         </div>
 
     </nav>
+    <div id="id02" class="modal2">
 
+        <form class="modal-content" action="/action_page.php">
+          <div class="containerM">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h1 class="signUpT text-center ">Sign Up</h1>
+            <p class="signUpT text-center ">Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+      
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
+              <button type="submit" class="signupbtn btn btn-primary ">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h1>Login</h1>
+          </div>
+      
+          <div class="containerM">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button class="btn btn-primary" type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="containerM" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
+            <span class="psw ">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      
 
     <div class="container-fluid  homeLinks">
         <div class="row  text-center ">
@@ -153,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 homeLinks2 border border-1 ">
+            <div class="col-4  homeLinks2 hL2 border border-1 " style="color:white ;">
                 <h1><a class="homeText" href="/HTML/about.html"><img src="/Images/woman doing yoga.jpeg"
                             class=" card-img-top " alt="...">About Me</a></h1>
             </div>
@@ -163,9 +223,9 @@
 
     <div class="container-fluid  homeLinks">
         <div class="row  text-center ">
-            <div class="col-2 blH text-center border border-1" style="background-color: rgba(135, 134, 134, 0.266);">
-                <ion-icon size="large" name="arrow-up-outline"></ion-icon>
-                <h1>Blog</h1>
+            <div class="col-2 blH text-center border border-1" style="background-color: rgba(135, 134, 134, 0.452);">
+                <ion-icon size="large"  class="whiteI" name="arrow-up-outline"></ion-icon>
+                <h1 style="color:white ;">Blog</h1>
             </div>
             <div class="col-2  border border-1" style="background-color: #008CBA;">
 
@@ -189,8 +249,8 @@
                 </div>
             </div>
             <div class="col-2 blH text-center border border-1 " style="background-color: #2599c0dd;">
-                <ion-icon size="large" name="arrow-up-outline"></ion-icon>
-                <h1>Book Now</h1>
+                <ion-icon size="large" name="arrow-up-outline"class="whiteI" ></ion-icon>
+                <h1 style="color:white ;">Book Now</h1>
             </div>
             <div class="col-2  border border-1" style="background-color: rgba(135, 134, 134, 0.418);">
                 <div class="w3-content w3-section" style="max-width:500px">
@@ -335,6 +395,28 @@
             document.body.style.backgroundColor = "white";
         }
     </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
 </body>
 
 </html>

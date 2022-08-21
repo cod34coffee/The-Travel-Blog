@@ -305,12 +305,16 @@ body {
       
   }
 
-
+.hLside :hover{
+    color: blue;
+}
 .lineBetween{
     margin-top: 5%;
     margin-bottom: 7%;
    
 }
+
+
 
 .subscribeForm{
     background-color: transparent;
@@ -381,7 +385,7 @@ body {
     width: 100%;
   }
   
-a:hover{
+  a:hover{
     text-decoration: none;
   }
 
@@ -455,7 +459,13 @@ a:hover{
     font-size: 35px;
     font-weight: bold;
   }
-  
+  .hL2{
+    background-color: rgba(105, 166, 201, 0.478);
+  }
+.whiteI{
+    color: white;
+}
+
 .inquireB, .inqText{
     margin-top: 2%;
 }
@@ -557,7 +567,7 @@ a:hover{
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: rgba(17, 17, 149, 0.63);
   }
   
   .sidenav .closebtn {
