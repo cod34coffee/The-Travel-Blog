@@ -16,29 +16,20 @@
 
 <body >
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-           
-            
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdownText" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Welcome To TravelHut
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="/HTML/home.html">Home</a></li>
-                          <li><a class="dropdown-item" href="/HTML/try2.html">Blog</a></li>
-                          <li><a class="dropdown-item" href="/HTML/bookTrip.html">Book Your Trip</a></li>
-                          <li><a class="dropdown-item" href="/HTML/about2.html">About</a></li>
-                          <li><a class="dropdown-item" href="/HTML/about2.html">Contact</a></li>
-                        </ul>
-                    </li>
+        
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="/HTML/home.html">Home</a>
+                    <a href="/HTML/try2.html">Blog</a>
+                    <a href="/HTML/bookTrip.html">Book Your Trip</a>
+                    <a href="/HTML/about2.html">About/Contact</a>
+                  </div>
+                  
+                  <div id="main">
                     
-                </ul>
+                    <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; TravelHut</span>
+                  </div>
+                  
 
             </div>
 
@@ -305,5 +296,18 @@
           setTimeout(carousel, 2000); // Change image every 2 seconds
         }
         </script>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+              document.body.style.backgroundColor = "white";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+              document.body.style.backgroundColor = "white";
+            }
+            </script>
     </body>
     </html>

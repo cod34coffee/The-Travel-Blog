@@ -47,17 +47,86 @@
                 </ul>
 
             </div>
-
-            <span class="material-symbols-outlined iconMenu collapse navbar-collapse justify-content-end"
-                id="navbarNav">
+            <div class="dropdown">
+            
+        <li class="nav-item dropdown ">
+            <a class="nav-link  material-symbols-outlined iconMenu collapse navbar-collapse justify-content-end"
+            id="navbarNav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="aC">
                 account_circle
             </span>
-            
-
+            </a>
+            <ul class="dropdown-menu ddMenu" aria-labelledby="navbarDropdown">
+              <li><a class=" bnav2 dropdown-item" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</a></li>
+              <li><a class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</a></li>
+              
+            </ul>
+          </li>
+        
+    </div>
         </div>
 
     </nav>
 
+    <div id="id02" class="modal2">
+
+        <form class="modal-content" action="/action_page.php">
+          <div class="containerM">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h1 class="signUpT text-center ">Sign Up</h1>
+            <p class="signUpT text-center ">Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+      
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
+              <button type="submit" class="signupbtn btn btn-primary ">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h1>Login</h1>
+          </div>
+      
+          <div class="containerM">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button class="btn btn-primary" type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="containerM" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
+            <span class="psw ">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
     <div class="card profileP " style="width: 12rem;">
         <img src="/Images/brunette poses with dress.jpeg" class="card-img-top profileImg" alt="...">
         <div class="card-body profileB">
@@ -414,5 +483,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="/JS/load-more-button.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+        
+        
 </body>
 </html>
